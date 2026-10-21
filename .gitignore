@@ -1,0 +1,25 @@
+# Secretos y estado local
+.env
+.env.*
+.vast/
+PLAN.md
+
+# Material del curso
+material/
+
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Artefactos pesados
+results/adapters/
+results/raw_logs/
+*.safetensors
+Sem10_Hackaton8.md
+
+# Estado interno de la cola y configuración de la GPU alquilada
+results/cola/
+results/locks/
+.vast.env

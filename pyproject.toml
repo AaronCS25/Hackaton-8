@@ -1,0 +1,40 @@
+[project]
+name = "router-orquestador-peft"
+version = "0.1.0"
+description = "Fine-tuning de Granite 4.2 3B como router de un agente orquestador. Comparación de LoRA con FRoD, MiCA y Uni-LoRA."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch==2.11.0",
+    "transformers==5.20.2",
+    "peft==0.21.2",
+    "accelerate>=1.10",
+    "safetensors",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+    "statsmodels",
+    "matplotlib",
+    "pyyaml",
+    "tqdm",
+    "nvidia-ml-py>=12",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+    "nbconvert",
+    "nbformat",
+    "jupyter",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

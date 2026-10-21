@@ -1,0 +1,13 @@
+{
+  "fecha_consulta": "2026-10-21",
+  "gpu_hora_usd": {
+    "vast_ai_a100_80gb_real": {"usd": 1.1408, "nota": "2x A100 SXM4 80GB alquiladas a 2.2815 USD/h por la máquina completa, con 80 GB de disco", "fuente": "vast.ai, oferta 36994164"},
+    "colab_pro_a100_80gb": {"usd": 0.75, "nota": "7.52 compute units por hora a 9.99 USD por 100 unidades", "fuente": "https://mccormickml.com/2024/04/23/colab-gpus-features-and-pricing/"},
+    "colab_enterprise_a100": {"usd": 3.52, "nota": "precio por hora de una A100 en Colab Enterprise", "fuente": "https://cloud.google.com/colab/pricing"},
+    "aws_p4de_a100_80gb": {"usd": 3.4309, "nota": "p4de.24xlarge on-demand en us-east-1 a 27.4471 USD/h para 8 GPUs", "fuente": "https://sparecores.com/server/aws/p4de.24xlarge"}
+  },
+  "api_usd_por_millon_tokens": {
+    "claude_haiku_5_5": {"entrada": 0.10, "salida": 0.50, "fuente": "Tabla de precios de modelos de Anthropic, cacheada al 2026-10-06"},
+    "claude_sonnet_5_5": {"entrada": 2.00, "salida": 10.00, "fuente": "Tabla de precios de modelos de Anthropic, cacheada al 2026-10-06"}
+  }
+}
